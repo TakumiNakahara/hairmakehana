@@ -1,0 +1,85 @@
+extend common/_layout
+
+append value
+    - var title= "HairemakeHana Service";
+    - var description= "HairmakeHanaをご紹介いたします。宜野湾市大山にある美容室です。お客様のご希望に沿った施術をいたします。お気軽にご連絡ください。";
+    - var keywords= "美容室,髪型,カット,パーマ,ヘアケア,髪";
+
+append addcss
+    link(rel="stylesheet" href="css/index.css")
+
+append addjs
+    script(src="js/index.js")
+//- ページのコンテンツ
+block content
+    #content
+        div(class="mainview -service")
+            p(class="mainview_text") Service
+        
+        div(class="serviceMenu")
+            h2 メニュー
+            ul(class="serviceMenu_wrap")
+                li(class="serviceMenu_wrap_item")
+                    h3 Cut 
+                    a(href="#cut") 
+                        img(alt="cut" src="../img/service01.jpg")
+                li(class="serviceMenu_wrap_item")
+                    h3 Parm
+                    a(href="#parm")  
+                        img(alt="parm" src="../img/service02.jpg")
+                li(class="serviceMenu_wrap_item")
+                    h3 Color
+                    a(href="#color") 
+                        img(alt="parm" src="../img/service03.jpg")
+                li(class="serviceMenu_wrap_item")
+                    h3 Head spa
+                    a(href="#headspa") 
+                        img(alt="Headspa" src="../img/service04.jpg")
+                li(class="serviceMenu_wrap_item")
+                    h3 Hena
+                    a(href="#hena") 
+                        img(alt="hena" src="../img/service05.jpg")
+        div(class="serviceContent")
+            section(class="cut -left  is-open" id="cut")
+                div(class="cut_disc")
+                    h2 <span>01</span> カット
+                    p 女性らしい柔らかな印象を与える、ショートヘアを再現致します。ショートヘア、ボブカットはぜひお任せください。ロングヘアの方や男性のお客様も大歓迎です
+                    button(class="cv")
+                        a(href="./price.html#cut")  料金を見る
+                div(class="cut_img")
+                    img(alt="" src="img/service01.jpg")
+            section(class="cut -right is-open" id="parm")
+                div(class="cut_img")
+                    img(alt="" src="img/service02.jpg")
+                div(class="cut_disc")
+                    h2 <span>02</span> パーマ
+                    p 女性らしい柔らかな印象を与える、ショートヘアを再現致します。ショートヘア、ボブカットはぜひお任せください。ロングヘアの方や男性のお客様も大歓迎です
+                    button(class="cv")
+                        a(href="./price.html#perm")  料金を見る
+            section(class="cut -left  is-open" id="color")
+                    div(class="cut_disc")
+                        h2 <span>03</span> カラー
+                        p 女性らしい柔らかな印象を与える、ショートヘアを再現致します。ショートヘア、ボブカットはぜひお任せください。ロングヘアの方や男性のお客様も大歓迎です
+                        button(class="cv")
+                            a(href="./price.html#color")  料金を見る
+                    div(class="cut_img")
+                        img(alt="" src="img/service03.jpg")
+            section(class="cut -right is-open" id="headspa")
+                div(class="cut_img")
+                    img(alt="" src="img/service04.jpg")
+                div(class="cut_disc")
+                    h2(class="-lg")  <span>04</span> ヘッドスパ
+                    p 女性らしい柔らかな印象を与える、ショートヘアを再現致します。ショートヘア、ボブカットはぜひお任せください。ロングヘアの方や男性のお客様も大歓迎です
+                    button(class="cv")
+                        a(href="./price.html#care")  料金を見る
+            section(class="cut -left  is-open" id="hena")
+                    div(class="cut_disc")
+                        h2 <span>05</span> ヘナ
+                        p 女性らしい柔らかな印象を与える、ショートヘアを再現致します。ショートヘア、ボブカットはぜひお任せください。ロングヘアの方や男性のお客様も大歓迎です
+                        button(class="cv")
+                            a(href="./price.html#care")  料金を見る
+                    div(class="cut_img")
+                        img(alt="" src="img/service05.jpg")
+
+    footer(class="footer")
+        img(src="img/hanaicon-footer.png")

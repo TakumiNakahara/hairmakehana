@@ -1,0 +1,111 @@
+extend common/_layout
+
+append value
+    - var title= "HairemakeHana About";
+    - var description= "HairmakeHanaをご紹介いたします。宜野湾市大山にある美容室です。お客様のご希望に沿った施術をいたします。お気軽にご連絡ください。";
+    - var keywords= "美容室,髪型,カット,パーマ,ヘアケア,髪";
+
+    append addcss
+    link(rel="stylesheet" href="css/index.css")
+
+    append addjs
+    script(src="js/index.js")
+    //- ページのコンテンツ
+    block content
+    #content
+        div(class="mainview -price")
+            p(class="mainview_text") Price
+        div(class="priceMenu")
+            h2 料金表
+            div(class="priceWrap")
+                div(class="priceWrap_card" id="cut")
+                    h3 Cut 
+                    ul(class="priceWrap_card_item")
+                        li(class="priceWrap_card_item_inner")
+                            p 男性
+                            p ¥7700
+                        li(class="priceWrap_card_item_inner")
+                            p 女性
+                            p ¥7700
+                        li(class="priceWrap_card_item_inner")
+                            p 高校生
+                            p ¥3300
+                        li(class="priceWrap_card_item_inner")
+                            p 中学生
+                            p ¥2750
+                        li(class="priceWrap_card_item_inner")
+                            p 小学生
+                            p ¥2200
+                div(class="priceWrap_card" id="color")
+                    h3 Color 
+                    ul(class="priceWrap_card_item")
+                        li(class="priceWrap_card_item_inner")
+                            p S
+                            p ¥6050
+                        li(class="priceWrap_card_item_inner")
+                            p M
+                            p ¥6600
+                        li(class="priceWrap_card_item_inner")
+                            p L
+                            p ¥7159
+                        li(class="priceWrap_card_item_inner")
+                            p リタッチ
+                            p ¥5280
+                        li(class="priceWrap_card_item_inner")
+                            p &nbsp;
+                div(class="priceWrap_card" id="care")
+                    h3 Care
+                    ul(class="priceWrap_card_item")
+                        li(class="priceWrap_card_item_inner")
+                            p 15分
+                            p ¥2200
+                        li(class="priceWrap_card_item_inner")
+                            p 25分
+                            p ¥3300
+                        li(class="priceWrap_card_item_inner")
+                            p 炭酸スパ
+                            p ¥4300
+                        li(class="priceWrap_card_item_inner")
+                            p &nbsp;
+                        li(class="priceWrap_card_item_inner")
+                            p &nbsp;
+                div(class="priceWrap_card" id="perm")
+                    h3 Perm 
+                    ul(class="priceWrap_card_item")
+                        li(class="priceWrap_card_item_inner")
+                            p S
+                            p ¥8800
+                        li(class="priceWrap_card_item_inner")
+                            p M
+                            p ¥9350
+                        li(class="priceWrap_card_item_inner")
+                            p L
+                            p ¥9900
+                        li(class="priceWrap_card_item_inner")
+                            p &nbsp;
+                        li(class="priceWrap_card_item_inner")
+                            p &nbsp;
+                div(class="priceWrap_card" id="set")
+                    h3 Set 
+                    ul(class="priceWrap_card_item")
+                        li(class="priceWrap_card_item_inner")
+                            p 男性
+                            p ¥7700
+                        li(class="priceWrap_card_item_inner")
+                            p 女性
+                            p ¥7700
+                        li(class="priceWrap_card_item_inner")
+                            p 高校生
+                            p ¥3300
+                        li(class="priceWrap_card_item_inner")
+                            p 中学生
+                            p ¥2750
+                        li(class="priceWrap_card_item_inner")
+                            p 小学生
+                            p ¥2200
+                
+
+
+
+    footer(class="footer")
+        img(src="img/hanaicon-footer.png")

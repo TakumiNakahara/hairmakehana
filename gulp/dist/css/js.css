@@ -1,0 +1,12 @@
+/* fadein */
+.scroll-in {
+  opacity: 1 !important;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-duration: 3s;
+  transition-duration: 3s;
+}
+
+.is-open {
+  opacity: 0;
+}

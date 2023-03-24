@@ -1,0 +1,26 @@
+$xl: 1200px;
+$l: 1000px; // PC
+$m: 680px; // タブレット
+$s: 480px;  // スマホ
+
+
+@mixin xl {
+  @media (max-width: ($xl)) {
+    @content;
+  }
+}
+@mixin l {
+  @media (max-width: ($l)) {
+    @content;
+  }
+}
+@mixin m {
+  @media (max-width: ($m)) {
+    @content;
+  }
+}
+@mixin s {
+  @media (max-width: ($s)) {
+    @content;
+  }
+}

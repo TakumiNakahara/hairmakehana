@@ -1,0 +1,115 @@
+extend common/_layout
+
+append value
+  - var title= "HairemakeHana Top";
+  - var description= "HairmakeHanaをご紹介いたします。宜野湾市大山にある美容室です。お客様のご希望に沿った施術をいたします。お気軽にご連絡ください。";
+  - var keywords= "美容室,髪型,カット,パーマ,ヘアケア,髪";
+
+append addcss
+  link(rel="stylesheet" href="css/index.css")
+
+append addjs
+  script(src="js/index.js")
+//- ページのコンテンツ
+block content
+  #content
+      div(class="main")
+        p(class="main_text")
+          |あなたは世界で<br>
+          |&nbsp;一人だけの美しい花
+      div(class="contentWrap")
+        section(class="topItem is-open")
+          div(class="topItem_disc")
+            h2 私の目指す姿
+            p 変わるのは髪型だけじゃない。
+              <br>あなたらしくなれる場所
+              <br>新しい自分に出会える場所
+              <br>そんなあなたを応援したい。
+            button(class="cv")
+                a(href="")  詳しく見る
+          div(class="topItem_img")
+            h3(class="-left") -Con<span>cept</span>
+            img(alt="" src="img/top01.jpg") 
+        section(class="topItem is-open")
+          div(class="topItem_img")
+            h3(class="-right") <span>-Ser</span>vice
+            img(alt="" src="img/top02.jpg") 
+          div(class="topItem_disc")
+            h2 おもてなし
+            p あなたのお悩みを
+              <br>自信に変えたい
+              <br>カットやパーマはもちろん
+              <br>あなたに寄り添った多様な
+              <br>サービスをご用意します。
+            button(class="cv")
+                a(href="")  詳しく見る
+        section(class="topItem is-open")
+          div(class="topItem_disc")
+            h2 料金
+            ul(class="topItem_disc_table") 
+              li
+                p カット
+                p ¥7700~
+              li
+                p パーマ
+                p ¥8800~
+              li
+                p カラー
+                p ¥6050~
+
+            button(class="cv")
+                a(href="./price.html")  詳しく見る
+            button(class="cv")
+                a(href="tel:070-5416-5587")  電話する
+          div(class="topItem_img")
+            h3(class="-left") &nbsp;-Pri<span>ce</span>
+            img(alt="" src="img/top03.jpg") 
+        section(class="topItem is-open")
+          div(class="topItem_img")
+            h3(class="-right") <span>O</span>pen-
+            img(alt="" src="img/top04.jpg") 
+          div(class="topItem_disc")
+            h2 営業時間
+            ul(class="topItem_disc_table") 
+              li
+                p 営業時間
+                p 9:30~18:00
+              li
+                p 定休日
+                p 火・日曜日
+              li(class="u-f-15") 朝早くからの受付もしております<br>※完全予約制となっております。
+            button(class="cv")
+                a(href="tel:070-5416-5587")  電話する
+            button(class="cv")
+                a(href="https://lin.ee/zdsOuTV")  LINE予約
+        section(class="topItem is-open")
+          div(class="topItem_disc")
+            h2 場所
+            ul(class="topItem_disc_table") 
+              li
+                p 住所
+                p 沖縄県宜野湾市大山 2-15-19 101
+              li(class="u-f-15") ※駐車場はお店から少し歩いた場所あります。
+            button(class="cv")
+                a(href="https://goo.gl/maps/uTaaZppRYHqhnJVq7")  店住所
+            button(class="cv")
+                a(href="https://goo.gl/maps/L2PmevgJAqUffx4m6")  駐車場
+            button(class="cv")
+                a(href="tel:070-5416-5587")  電話する
+          div(class="topItem_img")
+            h3(class="-left") -Acc<span>ess</span>
+            img(alt="" src="img/top05.jpg")
+        section(class="topItem is-open")
+          div(class="topItem_img")
+            h3(class="-right") <span>-Pr</span>ofile
+            img(alt="" src="img/top06.jpg") 
+          div(class="topItem_disc")
+            h2 私について
+            p あなたのお悩みを
+              <br>経歴
+              <br>得意なかっと
+              <br>など
+            button(class="cv")
+                a(href="")  詳しく見る
+  footer(class="footer")
+    img(src="img/hanaicon-footer.png")

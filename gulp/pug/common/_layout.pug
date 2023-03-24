@@ -1,0 +1,22 @@
+block value
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title}
+    meta(name='description', content=description)
+    meta(name='keywords', content=keywords)
+    link(rel='stylesheet' href='./css/style.css')
+    link(rel='stylesheet' href='./css/reset.css')
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    block addcss
+  body
+    include ./_header.pug
+    include ./_sidemenu.pug
+    block content
+    block addjs
+    script(src="https://code.jquery.com/jquery-3.3.1.js")
+    script(src="./js/script.js")

@@ -1,0 +1,223 @@
+.aboutmv{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    &_video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    &_text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        > h2{
+            font-size: 8rem;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 5s ease;
+            @include xl{
+                font-size: 6rem;
+            }
+            @include m{
+                font-size: 4rem;
+            }
+            @include s{
+                font-size: 2.5rem;
+            }
+        }
+        > p{
+            font-size: 10rem;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 5s ease;
+            @include xl{
+                font-size: 8rem;
+            }
+            @include m{
+                font-size: 5rem;
+            }
+            @include s{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+.arrow{
+    position: absolute;
+    bottom: 50px;
+    right: 10%;
+    width: 50px;
+    text-align: center;
+}
+.arrow p{
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.arrow img{
+    width: 70px;
+}
+.blinking{
+        -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+        -moz-animation:blink 1.5s ease-in-out infinite alternate;
+        animation:blink 1.5s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-moz-keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @keyframes blink{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+
+.aboutItem{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    @include l{
+        flex-direction: column;
+    }
+    &_disc{
+        width: 70%;
+        position: relative;
+        @include l{
+            order: 2;
+            margin: 0 auto;
+            width: 90%;
+        }
+        > h2{
+            font-size: 3rem;
+            padding: 20px 0 100px;
+            text-align: center;
+            box-sizing: border-box;
+            @include m{
+                padding: 20px 0 30px;
+            }
+            @include s{
+                font-size: 2rem;
+            }
+        }
+        &_text{
+            font-size: 3rem;
+            width: 60%;
+            margin: 0 auto;
+            line-height: 2;
+            text-align: center;
+            animation: fadeIn 3s ease;
+            @include xl{
+                font-size: 2.5rem;
+            }
+            @include l{
+                width: 100%;
+                height: 350px;
+            }
+            @include m{
+                width: 100%;
+                font-size: 1.8rem;
+                height: 200px;
+            }
+            @include s{
+                width: 100%;
+                font-size: 1.5rem;
+                height: 150px;
+            }
+            &_part{
+                display: none;
+            }
+        }
+        &_before{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            font-size: 2rem;
+            text-align: center;
+            @include l{
+                position: static;
+                width: 100%;
+                text-align: center;
+            }
+            @include s{
+                font-size: 1.5rem;
+                height: 50px;
+            }
+            >img{
+                width: 100%;
+                @include l{
+                    width: 50px;
+                }
+                @include s{
+                    width: 30px;
+                }
+            }
+        }
+        &_next{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            width: 100px;
+            font-size: 2rem;
+            text-align: center;
+            @include l{
+                position: static;
+                width: 100%;
+                text-align: center;
+            }
+            @include s{
+                font-size: 1.5rem;
+            }
+            >img{
+                width: 100%;
+                @include l{
+                    width: 50px;
+                }
+                @include s{
+                    width: 30px
+                }
+            }
+        }
+    }
+    &_img{
+        width: 30%;
+        @include l{
+            order: 1;
+            width: 80%;
+            margin: 0 auto;
+        }
+        >img{
+            width: 100%;
+        &.-pc{
+            display: block;
+            @include l{
+                display: none;
+            }
+        }
+        &.-sp{
+            display: none;
+            @include l{
+                display: block;
+            }
+        }
+        }
+    }
+}
+
+

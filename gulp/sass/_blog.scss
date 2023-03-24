@@ -1,0 +1,61 @@
+.blogMenu{
+    h2{
+        font-size: 3rem;
+        padding: 30px;
+        text-align: center;
+        @include s{
+            font-size: 2rem;
+        }
+    }
+}
+.blogWrap_item{
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+.blog{
+    display: flex;
+    width: 100%;
+    border: solid 1px $font-color;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    @include l{
+        display: block;
+    }
+    &_heading{
+        width: 60%;
+        position: relative;
+        @include l{
+            width: 90%;
+            margin: 0 auto;
+        }
+        > p{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        > dt{
+            text-align: center;
+            font-size: 2rem;
+            padding: 20px 0;
+        }
+        > dd{
+            line-height: 2;
+            font-size: 1.4rem;
+        }
+    }
+    &_img{
+        width: 40%;
+        border: solid 1px $font-color;
+        border-radius: 30px;
+        @include l{
+            width: 90%;
+            margin: 10px auto 0;
+        }
+        >img{
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+}

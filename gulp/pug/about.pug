@@ -1,0 +1,46 @@
+extend common/_layout
+
+append value
+  - var title= "HairemakeHana About";
+  - var description= "HairmakeHanaをご紹介いたします。宜野湾市大山にある美容室です。お客様のご希望に沿った施術をいたします。お気軽にご連絡ください。";
+  - var keywords= "美容室,髪型,カット,パーマ,ヘアケア,髪";
+
+append addcss
+  link(rel="stylesheet" href="css/index.css")
+
+append addjs
+  script(src="js/index.js")
+//- ページのコンテンツ
+block content
+  #content
+      div(class="aboutmv")
+        <video class="aboutmv_video" muted autoplay loop>
+          <source src="img/about.mp4?loop=1&rel=0" type="video/mp4">
+        </video>
+        div(class="aboutmv_text")
+          h2 About
+          p 私について
+        <div class="arrow">
+            <div class="blinking">
+                <p>scroll</p>
+                <img class="pointer" src="img/point.png">
+            </div>
+        </div>
+      div(class="aboutItem")
+        div(class="aboutItem_disc")
+          h2 私について
+          ul(class="aboutItem_disc_text") 
+            li(class="aboutItem_disc_text_part") HairmakeHanaのTomokoです。<br>美容師を初めて何年になります。<br>日々、美容師としてお客様と<br>関われる事に感謝しています。
+            li(class="aboutItem_disc_text_part") 誰もが美しさを兼ね備えている。<br>私は髪を切る事を通して<br>お客様の美しさを<br>見出す・引き出すお手伝い<br>をコンセプトに施術させて頂いています。
+            li(class="aboutItem_disc_text_part") 一人でも多くの方の美しさと<br>美容師として、出会える事を<br>楽しみにしています。
+          div(class="aboutItem_disc_before") 
+            p -back
+            img(src="img/before.png" alt="")
+          div(class="aboutItem_disc_next")
+            p next-
+            img(src="img/next.png" alt="")
+        div(class="aboutItem_img")
+          img(class="-pc" alt="" src="../img/about-prof.jpg")
+          img(class="-sp" alt="" src="../img/about-prof-sp.jpg")
+  footer(class="footer")
+    img(src="img/hanaicon-footer.png")

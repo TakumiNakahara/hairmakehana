@@ -1,0 +1,40 @@
+extend common/_layout
+
+append value
+    - var title= "HairemakeHana Service";
+    - var description= "HairmakeHanaをご紹介いたします。宜野湾市大山にある美容室です。お客様のご希望に沿った施術をいたします。お気軽にご連絡ください。";
+    - var keywords= "美容室,髪型,カット,パーマ,ヘアケア,髪";
+
+append addcss
+    link(rel="stylesheet" href="css/index.css")
+
+append addjs
+    script(src="js/index.js")
+//- ページのコンテンツ
+block content
+    #content
+        div(class="mainview -qa")
+            p(class="mainview_text") Q&amp;A 
+        div(class="qaMenu")
+            h2 よくある質問にお答えします。
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> 男性でも利用できますか？
+                li(class="ans") <span> A </span> はい！男性のお客様も大歓迎です！
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> 頭皮ケアなどはありますか？
+                li(class="ans") <span> A </span> 炭酸ヘッドスパや頭皮マッサージの仕方など教えています！
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> 髪型お任せとかできますか？
+                li(class="ans") <span> A </span> 施術前にヒアリングをおこなって、お客様にあった髪型をご提案します。
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> 予約なしの来店もOKですか？
+                li(class="ans") <span> A </span> 申し訳ありません。完全予約制となっております。前日の16時までにご予約お願い致します。
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> コロナ対策はしてますか？
+                li(class="ans") <span> A </span> 店内の換気や、ハサミや使用する道具の消毒マスクを着用して施術しています。
+            ul(class="qaWrap")
+                li(class="que unclick") <span> Q </span> ヘナってなんでしょうか？
+                li(class="ans") <span> A </span> 12種類のハーブで髪を染めます。
+
+    footer(class="footer")
+        img(src="img/hanaicon-footer.png")

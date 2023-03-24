@@ -1,0 +1,27 @@
+.galleryWrap{
+    display: flex;
+    flex-wrap: wrap;
+    @include m{
+        padding: 30px;
+    }
+    &_item{
+        width: 20%;
+        border: 1px solid $font-color;
+        box-sizing: border-box;
+        @include m{
+            width: 90%;
+            margin: 0 auto 30px;
+        }
+        &_img{
+            >img{
+                width: 100%;
+            }
+        }
+        &_disc{
+            padding: 10px;
+            border-top: 1px solid $font-color;
+            height: 30px;
+            overflow-y: scroll;
+        }
+    }
+}
